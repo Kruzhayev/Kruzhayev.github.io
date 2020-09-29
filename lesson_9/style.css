@@ -1,0 +1,77 @@
+.section{
+	padding: 30px;
+}
+
+.header{
+	font-size: 20px;
+	line-height: 1.5;
+	margin: 60px auto;
+
+}
+
+.header span{
+	display: block;
+
+}
+
+.form{
+	border: 5px solid #2727d9;
+	padding: 30px 25px;
+	
+}
+
+.form-header, .section-header{
+	font-size: 20px;
+	font-weight: 900;
+	margin-bottom: 35px;
+
+}
+
+.form input{
+	margin-bottom: 15px;
+
+}
+
+.form-btn{
+	background-color: #2727d9; 
+	margin: 15px auto;
+
+}
+
+.feature-box{
+	margin: 30px auto;
+}
+
+.feature-box img{
+	width: 150px;
+	height:100px;
+}
+
+.feature{
+	margin: 60px auto;
+}
+
+.feature p{
+	margin-top: 20px;
+}
+
+
+.video{
+	margin-bottom: 30px;
+}
+
+.button-link, .button-link:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.forma-btn{
+	display: block;
+	width: 100%;
+	margin: 1% auto;
+}
+
+.col-xs-6{
+	background-color: red;
+}
