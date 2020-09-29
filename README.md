@@ -1,2 +1,2 @@
-# Kruzhayev.github.io
+# BOOTSTR
 Мой первый сайт
