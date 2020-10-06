@@ -233,6 +233,12 @@ section {
     background-position: top right;
     /* Пижать картинку вверх справа*/
   }
+  .main-contente {
+    /* Главный заголовок*/
+  }
+  .main-contente h1 {
+    font-size: 3rem;
+  }
   .header,
   .wrap-block {
     text-align: center;
