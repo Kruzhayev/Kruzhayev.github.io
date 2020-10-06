@@ -3,5 +3,6 @@
 # BOOTSTR
 Мой первый сайт
 
-[первый сайт](https://kruzhayev.github.io/lesson_9/ "Страницу сверстал
+[lesson_9](https://kruzhayev.github.io/lesson_9/ "Страницу сверстал
 С ПОМОЩЮ БИБЛИОТЕКИ BOOTSTRAP.CSS")
+[progect1](https://kruzhayev.github.io/progect1/index.html/ "Проверка адоптации")
