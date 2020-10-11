@@ -89,6 +89,12 @@ button, input, a{     /*Все кнопки, поля ввода, ссылки*/
 section{
 	padding: 10rem 0;  /*1rem=10px(заданы в html{font-size: 10px;}*/
 }
+.section-header{
+	margin: 2rem 0 10rem;
+	.bold();
+	font-size: 3.6rem;
+	text-align: center;
+}
 /*-----------------------------------------*/
 /* main */  /* Первый экран */
 /*-----------------------------------------*/         
@@ -223,6 +229,64 @@ section{
 		color:@text2;
 	}
 }
+/*-------------------------------------------------*/
+/*Оформление секции с преймуществами*/
+/*-------------------------------------------------*/
+
+.features{
+	&-block{
+		text-align: center;
+		h3{
+			font-size: 2rem;
+			.bold();
+			margin-bottom: 3rem;
+
+		}
+		p{
+			display: inline-block;
+			width: 80%;
+			font-size: 1.4rem;
+		}
+	}
+	&-img{
+		height:8;
+		margin-bottom: 3rem;
+
+		img{
+			height: 6rem;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+.slick-active{
+	outline: none;
+}
+
+.slick-slide{
+	outline: none;
+}
+.arrow{
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	z-index: 99;
+	width: 2rem;
+	height: 2rem;
+	border:none;
+}
+
+.prev{
+	left: 0;
+	background:url(../img/left.svg) center no-repeat;
+	background-size:100%;
+}
+.next{
+	right: 0;
+	background:url(../img/next.svg) center no-repeat;
+	background-size:100%;
+}
+
 
 /*-------------------------------------------------*/
 /*Медио запросы*/
@@ -252,14 +316,14 @@ section{
 	.main{
 		background-position: top right; /* Пижать картинку вверх справа*/
 		&-contente{
-		
-		/* Главный заголовок*/
-		    h1{
-			font-size: 3rem;
-			
+
+			/* Главный заголовок*/
+			h1{
+				font-size: 3rem;
+
+			}
+
 		}
-		
-	}
 
 	}
 

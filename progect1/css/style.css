@@ -80,6 +80,12 @@ section {
   padding: 10rem 0;
   /*1rem=10px(заданы в html{font-size: 10px;}*/
 }
+.section-header {
+  margin: 2rem 0 10rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3.6rem;
+  text-align: center;
+}
 /*-----------------------------------------*/
 /* main */
 /* Первый экран */
@@ -208,6 +214,57 @@ section {
   line-height: 7rem;
   /* Вертикальное выравнивание одной строчки по середине*/
   color: #ffffff;
+}
+/*-------------------------------------------------*/
+/*Оформление секции с преймуществами*/
+/*-------------------------------------------------*/
+.features-block {
+  text-align: center;
+}
+.features-block h3 {
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin-bottom: 3rem;
+}
+.features-block p {
+  display: inline-block;
+  width: 80%;
+  font-size: 1.4rem;
+}
+.features-img {
+  height: 8;
+  margin-bottom: 3rem;
+}
+.features-img img {
+  height: 6rem;
+  display: block;
+  margin: 0 auto;
+}
+.slick-active {
+  outline: none;
+}
+.slick-slide {
+  outline: none;
+}
+.arrow {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+.prev {
+  left: 0;
+  background: url(../img/left.svg) center no-repeat;
+  background-size: 100%;
+}
+.next {
+  right: 0;
+  background: url(../img/next.svg) center no-repeat;
+  background-size: 100%;
 }
 /*-------------------------------------------------*/
 /*Медио запросы*/
