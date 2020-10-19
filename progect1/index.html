@@ -32,16 +32,16 @@
 						</div>
 					</div>
 
-					<div class="col-lg-2 col-lg-offset-4 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-0 col-xs-12">
+					<div class="col-lg-2 col-lg-offset-4 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-0 col-xs-12">
 						<div class="phone-block">
 							<a class="phone-link" href="#">+7 495 771 05 08</a>
 						</div>
 					</div>
 
-					<div class="col-md-3 col-sm-5 col-xs-12">
+					<div class="col-lg-3 col-lg-offset-0 col-md-4 col-sm-5 col-xs-12">
 						<div class="wrap">
 							<div class="wrap-block">
-								<button class="button hesder-btn">
+								<button class="button hesder-btn popup-btn">
 									Получить консультацию
 								</button>
 							</div>
@@ -132,6 +132,45 @@
 
 		</div>
 	</section>
+
+	<!-- --------------------------------------------- -->
+	<!-- ----------Модальные окна--------------------- -->
+	<!-- --------------------------------------------- -->
+
+	<!-- ----------получить консультацию--------------- -->
+
+	<div class="popup">
+		<!-- Само (белое) мадальное окно -->
+		<div class="popup-dialog">
+			<!-- Содержимое модального окна -->
+			<div class="popup-content">
+				<button class="popup-close">&times</button>
+				<!-- Заголовок окна -->
+				<h4 class="popup-header">
+					Заинтересовало?	
+				</h4>
+				<p>Оставьте свои канактные данные<br>для связи.</p>
+				<div class="main-form popup-form">
+					<form action="#">
+						<label for="#">Ваше имя</label>
+						<input class="main-form-input" type="text">
+						<label for="#">Номер телефона</label>
+						<input class="main-form-input" type="text">
+						<label for="#">Сообщение</label>
+						<textarea class="main-form-input" rows="5"></textarea>
+						<button class="main-form-btn button" type="submit">Оставьте заявку</button>
+						<small>Подарок в день обращения</small>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
 	<!-- --------------------------------------------- -->
 	<!-- ----------Скрипты--------------------------- -->
 	<!-- --------------------------------------------- -->
@@ -143,9 +182,38 @@
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<!--Подключаем саму библиотеку slick slider------------------------>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
-	<!--Инициализируем слайдер slick slider------------------------>
+
+	<!--*******Инициализируем слайдер slick slider******************-->
+
 	<script>
 		$(document).ready(function(){
+
+			/*---------------------------------------*/
+			/*Вызов модального окна*/
+			/*---------------------------------------*/
+			/*$('.popup-btn') - Обращение к элементу на стронице class="popup-btn"*/
+			/*on -какойто событие 'click'*/
+			/*function(event) -функция которая произайдет*/
+			$('.popup-btn').on('click', function(event){
+				/*event.preventDefault(); -отменяем стондартное нажатие на кнопку*/
+				event.preventDefault();
+				/*$('.popup')- найти class="popup")*/
+				/*fadeIn() -Показывать с анимацией*/
+				$('.popup').fadeIn();
+			});
+			/*--------------------------------------*/
+			/*закрытие модального окна*/
+			/*---------------------------------------*/
+			$('.popup-close').on('click', function(event){
+				event.preventDefault();
+				/*$('.popup')- найти class="popup")*/
+				/*fadeIn() -Показывать с анимацией*/
+				$('.popup').fadeOut();
+			});
+			/*---------------------------------------*/
+
+			/********Инициализируем слайдер slick slider****************/
+
 			$('.featurs-slider').slick({
 				infinite: true,
 				slidesToShow: 4,
@@ -164,8 +232,8 @@
 					breakpoint: 767,
 					settings: {
 						slidesToShow: 1,
-						prevArrow: '<button class="prev arrow"></button>',
-						nextArrow: '<button class="next arrow"></button>',
+						prevArrow: '<button class="next arrow"></button>',
+						nextArrow: '<button class="prev arrow"></button>',
 						slidesToScroll: 1
 					}
 				}
