@@ -64,7 +64,7 @@ a:hover{
 	text-decoration: none;
 }	
 
-button, input, a{     /*Все кнопки, поля ввода, ссылки*/
+button, input, a, textarea{     /*Все кнопки, поля ввода, ссылки*/
 	&:focus{           /*в фокусе*/
 		outline:none;  /*без обводки*/
 	}
@@ -163,6 +163,7 @@ section{
 			margin: 2rem 0;
 			width: 100%;
 			border:1px solid @border-input;
+			border-radius:5px;
 			padding: 1.7rem;
 		}
 		/*Подписи к полям*/
@@ -287,6 +288,59 @@ section{
 	background-size:100%;
 }
 
+/*-------------------------------------------------*/
+/*Оформление модальных окон*/
+/*-------------------------------------------------*/
+
+.popup{
+	display: none;   /*Скрываем всплывающие окно*/
+	position:fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	background-color: rgba(0,0,0,0.5);
+	&-content{
+		position:fixed;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 10%;
+		background-color:@light;
+		padding: 4rem 6rem;
+	}
+
+	&-form{
+		margin-top: 3rem;
+		padding: 0;
+	}
+
+	&-close{
+		position:absolute;
+		top: -1.5rem;
+		right: -2rem;
+		width: 2rem;
+		text-align: center;
+		border:none;
+		background-color: transparent;
+		font-size: 3rem;
+		color:@light;
+
+	}
+
+	&-header{
+		.bold();
+	}
+
+	&-content{
+		text-align: center;
+	}
+}
+
+
+
 
 /*-------------------------------------------------*/
 /*Медио запросы*/
@@ -302,6 +356,7 @@ section{
 
 		&-contente{
 			margin-top: 3rem;
+			
 		}
 
 		&-title{
@@ -309,6 +364,7 @@ section{
 			margin-bottom: 3rem;
 		}
 	}
+	
 }
 
 @media (max-width: 767px) {
@@ -316,6 +372,7 @@ section{
 	.main{
 		background-position: top right; /* Пижать картинку вверх справа*/
 		&-contente{
+			margin-top: 13rem;
 
 			/* Главный заголовок*/
 			h1{
@@ -325,11 +382,14 @@ section{
 
 		}
 
+
 	}
 
 	.header, .wrap-block{
 		text-align: center;
+		
 	}
+
 }
 
 
