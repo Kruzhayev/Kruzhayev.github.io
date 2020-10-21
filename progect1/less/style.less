@@ -90,6 +90,16 @@ section{
 	padding: 10rem 0;  /*1rem=10px(заданы в html{font-size: 10px;}*/
 }
 .section-header{
+	&-light{
+		color:@light;
+	}
+	h2{
+		.bold();
+		font-size: 3.6rem;
+	}
+	p{
+		font-size: 1.4rem;
+	}
 	margin: 2rem 0 10rem;
 	.bold();
 	font-size: 3.6rem;
@@ -289,6 +299,67 @@ section{
 }
 
 /*-------------------------------------------------*/
+/*Секция с ценами-----------------------------------*/
+/*-------------------------------------------------*/
+.price{
+	background:@icons-color;
+	&-header-btn{
+		margin-top: 2.5rem;
+	}
+	&-button{
+		text-align: right;
+	}
+	/*карточки с тарифами*/
+	&-block{
+		padding: 1rem 3rem 4rem;
+		background-color: @light;
+		box-shadow:7px 12px 21px 0px rgba(0,0,0,0.17);
+		text-align: center;
+		min-height: 59rem;
+		h4{
+			margin: 3rem 0;
+			font-size: 1.9rem;
+			.bold();
+		}
+		img{
+			display: inline-block;
+			margin-bottom: 2rem;
+			width: 100%;
+		}
+	}
+
+	&-tag{
+		display: block;
+		margin-bottom: 2rem;
+		font-size: 1.9rem;
+		.bold();
+
+	}
+	&-list{
+		padding: 0;
+		list-style: none;
+		min-height: 16rem;
+		font-size: 1.6rem;
+		line-height: 1.6;
+
+		li{
+			&:before{
+				content: "";
+				display: inline-block;
+				margin-right: 1rem;
+				background:url(../img/gal.svg) center no-repeat;
+				background-size:300%;
+				width: 2.4rem;
+				height: 2.4rem;
+				vertical-align: middle;
+			}
+		}
+
+	}
+}
+
+
+/*-------------------------------------------------*/
 /*Оформление модальных окон*/
 /*-------------------------------------------------*/
 
@@ -363,6 +434,23 @@ section{
 			text-align: center;
 			margin-bottom: 3rem;
 		}
+	}
+
+	.price{
+		&-button{
+			text-align: center;
+			padding: 2rem 0;
+		}
+		&-header-btn{
+			margin-top: 0rem;
+			margin-bottom: 2rem;
+		}
+		&-block{
+			margin: 2rem;
+		}
+	}
+	.section-header-light{
+		margin-bottom: 0;
 	}
 	
 }
