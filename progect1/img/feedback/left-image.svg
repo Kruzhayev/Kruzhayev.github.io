@@ -1,0 +1,32 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="602" width="802" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_21">
+   <path fill="#0fff2f" id="svg_5" d="m356.04395,256.04395l0,87.91209l87.91209,0l0,-87.91209l-87.91209,0zm57.32313,64.61268l-4.1054,4.09187l-24.66813,-24.74851l24.66813,-24.74851l4.1054,4.09187l-20.5894,20.65664l20.5894,20.65664z"/>
+   <g transform="matrix(0.19321338319358097,0,0,0.19321338319358097,0,0) " id="svg_6"/>
+   <g transform="matrix(0.19321338319358097,0,0,0.19321338319358097,0,0) " id="svg_7"/>
+   <g transform="matrix(0.19321338319358097,0,0,0.19321338319358097,0,0) " id="svg_8"/>
+   <g transform="matrix(0.19321338319358097,0,0,0.19321338319358097,0,0) " id="svg_9"/>
+   <g transform="matrix(0.19321338319358097,0,0,0.19321338319358097,0,0) " id="svg_10"/>
+   <g transform="matrix(0.19321338319358097,0,0,0.19321338319358097,0,0) " id="svg_11"/>
+   <g transform="matrix(0.19321338319358097,0,0,0.19321338319358097,0,0) " id="svg_12"/>
+   <g transform="matrix(0.19321338319358097,0,0,0.19321338319358097,0,0) " id="svg_13"/>
+   <g transform="matrix(0.19321338319358097,0,0,0.19321338319358097,0,0) " id="svg_14"/>
+   <g transform="matrix(0.19321338319358097,0,0,0.19321338319358097,0,0) " id="svg_15"/>
+   <g transform="matrix(0.19321338319358097,0,0,0.19321338319358097,0,0) " id="svg_16"/>
+   <g transform="matrix(0.19321338319358097,0,0,0.19321338319358097,0,0) " id="svg_17"/>
+   <g transform="matrix(0.19321338319358097,0,0,0.19321338319358097,0,0) " id="svg_18"/>
+   <g transform="matrix(0.19321338319358097,0,0,0.19321338319358097,0,0) " id="svg_19"/>
+   <g transform="matrix(0.19321338319358097,0,0,0.19321338319358097,0,0) " id="svg_20"/>
+  </g>
+ </g>
+</svg>
